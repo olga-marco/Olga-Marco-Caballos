@@ -1,0 +1,125 @@
+/* Estilo general para el body */
+body {
+    display: flex;
+    flex-direction: column;  /* Aseguramos que el pie de página esté al final */
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #bd7474; /* Color de fondo de la página */
+    background-image: url('fondo-herraduras.jpg');
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilo para el título */
+.titulo {
+    font-size: 36px;         /* Tamaño grande para el título */
+    font-weight: bold;       /* Negrita para hacerlo más destacado */
+    color: white;            /* Color del texto en blanco */
+    font-family: 'Georgia', serif; /* Fuente serif similar a la usada en los nombres */
+    text-align: center;      /* Centrado del texto */
+    margin-top: 20px;        /* Margen superior para que no quede pegado al borde */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto para hacerlo legible */
+}
+
+/* Contenedor principal para centrar el contenido */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;  /* Los elementos se apilan uno sobre otro */
+    justify-content: center; /* Centrar los elementos verticalmente */
+    align-items: center;     /* Centrar los elementos horizontalmente */
+    flex-grow: 1;            /* Permite que este contenedor ocupe el espacio disponible */
+    padding: 20px;           /* Añadimos algo de espacio alrededor del contenido */
+    width: 100%;             /* El contenedor ocupa todo el ancho */
+}
+
+/* Estilo para la galería (los cuadros de las imágenes) */
+.galeria {
+    display: flex;
+    gap: 20px; /* Espaciado entre los cuadros */
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los cuadros se ajusten en múltiples filas si es necesario */
+}
+
+/* Estilo para cada cuadro (contorno con imagen) */
+.cuadro {
+    width: 350px;            /* Ancho del cuadro */
+    height: 500px;           /* Alto del cuadro más grande para acomodar el texto */
+    background-color: #4CAF50; /* Color del cuadro verde */
+    position: relative;      /* Para el contenido dentro del cuadro */
+    display: flex;
+    flex-direction: column;  /* Alineamos el contenido de arriba hacia abajo */
+    justify-content: space-between; /* Aseguramos que el texto ocupe el espacio restante */
+    align-items: center;
+    border-radius: 10px;     /* Bordes redondeados */
+    overflow: hidden;        /* Esconde la parte de la imagen que sobresalga */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor de los cuadros */
+    background-image: url('fondo-cuadro.jpg'); /* Añadimos una imagen de fondo */
+    background-size: cover; /* Aseguramos que la imagen cubra todo el cuadro */
+    background-position: center; /* Centrar la imagen de fondo */
+}
+
+/* Contenedor de la imagen y el texto */
+.contenido {
+    display: flex;
+    flex-direction: column; /* Los elementos se colocan de arriba a abajo */
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center; /* Alineamos el texto al centro */
+    position: relative; /* Posición relativa para superponer el texto sobre la imagen de fondo */
+}
+
+/* Estilo para las imágenes */
+.imagen {
+    width: 200px; /* Ancho de la imagen más grande */
+    height: 200px; /* Alto de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra su área sin distorsionarse */
+    border-radius: 5px; /* Bordes redondeados en la imagen */
+    margin-bottom: 10px; /* Espacio inferior entre la imagen y el texto */
+}
+
+/* Estilo para el texto del nombre */
+.texto {
+    font-size: 24px;      /* Tamaño del nombre */
+    font-weight: bold;    /* Negrita para destacar el nombre */
+    color: white;         /* Color del texto */
+    font-family: 'Georgia', serif; /* Fuente serif bonita para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para hacerlo legible */
+    margin: 0;
+}
+
+/* Estilo para la descripción debajo del nombre */
+.descripcion {
+    font-size: 14px;     /* Tamaño más pequeño para la descripción */
+    color: white;        /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Fuente para la descripción */
+    padding: 5px;
+    text-align: center;  /* Alineación centrada */
+    width: 90%;           /* Aseguramos que el texto no ocupe todo el ancho del contenedor */
+    margin-top: 10px;     /* Espacio entre el nombre y la descripción */
+    flex-grow: 1;         /* Hace que la descripción ocupe el espacio restante en el cuadro */
+}
+
+/* Estilo para el pie de página */
+.footer {
+    width: 100%;
+    background-color: #333; /* Color de fondo oscuro */
+    color: white;           /* Color del texto */
+    text-align: center;     /* Centra el texto */
+    padding: 20px;          /* Espaciado alrededor del texto */
+    position: relative;
+    bottom: 0;
+    font-size: 14px;        /* Tamaño de fuente más pequeño */
+    margin-top: 20px;       /* Espacio entre el contenido y el pie de página */
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+
+
